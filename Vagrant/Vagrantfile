@@ -13,7 +13,7 @@ mast.vm.network "public_network", bridge: "enp0s8:wlp3s01"
         mast.vm.provider "virtualbox" do |vb|
             vb.gui = false
             vb.name = "master"
-            vb.memory = "512"
+            vb.memory = "2048"
    end
 end
     config.vm.define "node" do |node|
@@ -23,7 +23,7 @@ node.vm.network "public_network", bridge: "enp0s8:wlp3s01"
         node.vm.provider "virtualbox" do |vb|
             vb.gui = false    
             vb.name = "node"
-            vb.memory = "512"
+            vb.memory = "2048"
    end
 end
   # The most common configuration options are documented and commented below.
