@@ -5,6 +5,7 @@ Bu doküman ile birden fazla sunucu kullanarak Kubernetes Cluster oluşturulabil
 
 ### Ön Gereksinimler
 [**Vagrant**](https://www.vagrantup.com/downloads.html "Vagrant"), 2.2.4
+<br>
 [**Virtualbox**](https://www.virtualbox.org/wiki/Downloads "Virtualbox"), 6.0
 
 ### Nasıl Çalışır?
@@ -33,7 +34,7 @@ VM adı ya da sunucu RAM değeri değiştirilebilir.
 	end
 
 
-##Nasıl Kaldırılır?
+## Nasıl Kaldırılır?
 
 Vagrant ile oluşturulan VM/leri tamamen kaldırmak için halt ve destroy komutlarını uygulayın.
 
