@@ -14,6 +14,3 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
-      evn:
-      - name: WEB_APP_ENV
-        value: "web-app-env"
