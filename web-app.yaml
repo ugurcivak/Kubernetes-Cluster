@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: web-app
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: web-app
+    spec:
+      containers:
+      - name: http-app
+        image: nginx
+        ports:
+        - containerPort: 80
+      evn:
+      - name: WEB_APP_ENV
+        value: "web-app-env"
