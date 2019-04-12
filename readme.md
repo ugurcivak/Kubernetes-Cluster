@@ -32,6 +32,7 @@ VM adı ya da sunucu RAM değeri değiştirilebilir.
 		end
 	end
 
+
 ##Nasıl Kaldırılır?
 
 Vagrant ile oluşturulan VM/leri tamamen kaldırmak için halt ve destroy komutlarını uygulayın.
