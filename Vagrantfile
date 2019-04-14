@@ -8,22 +8,22 @@
 Vagrant.configure("2") do |config|
     config.vm.define "mast" do |mast|
         mast.vm.box = "ubuntu/bionic64"
-mast.vm.network "public_network", ip: "192.168.1.150"
-mast.vm.network "public_network", bridge: "enp0s8:wlp3s01"
+mast.vm.network "public_network", ip: "192.168.1.150", bridge: "wlp3s0"
         mast.vm.provider "virtualbox" do |vb|
             vb.gui = false
             vb.name = "master"
-            vb.memory = "2048"
+            vb.memory = "750"
+	    vb.cpus = "2"
    end
 end
     config.vm.define "node" do |node|
        node.vm.box = "ubuntu/bionic64"
-node.vm.network "public_network", ip: "192.168.1.160"
-node.vm.network "public_network", bridge: "enp0s8:wlp3s01"
-        node.vm.provider "virtualbox" do |vb|
+node.vm.network "public_network", ip: "192.168.1.160", bridge: "wlp3s0"
+       node.vm.provider "virtualbox" do |vb|
             vb.gui = false    
             vb.name = "node"
-            vb.memory = "2048"
+            vb.memory = "750"
+	    vb.cpus = "4"
    end
 end
   # The most common configuration options are documented and commented below.
